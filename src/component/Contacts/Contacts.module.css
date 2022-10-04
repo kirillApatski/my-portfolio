@@ -1,0 +1,43 @@
+.contactsWrapp {
+    background-color: grey;
+    padding-bottom: 50px;
+}
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.contactsForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.contactsForm input{
+    border-bottom: 1px solid black;
+    width: 300px;
+    background-color: rgba(56, 56, 56, 0.65);
+    outline: none;
+    color: white;
+    padding: 10px 5px;
+    font-size: 20px;
+}
+.contactsForm textarea {
+    min-width: 350px;
+    min-height: 150px;
+    background-color: #383838;
+    outline: none;
+    color: white;
+}
+.btn {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #5e5e5e;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: silver;
+}
