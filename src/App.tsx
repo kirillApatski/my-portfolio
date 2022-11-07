@@ -1,23 +1,17 @@
 import React from 'react';
 import './App.css';
-import {Header} from "./component/Header/Header";
 import {Main} from "./component/Main/Main";
-import {Skills} from "./component/Skils/Skills";
-import {MyWorks} from "./component/MyWorks/MyWorks";
-import {Contacts} from "./component/Contacts/Contacts";
-import {Footer} from "./component/Footer/Footer";
+import {BrowserRouter} from "react-router-dom";
+
 
 function App() {
-  return (
-    <div className="App">
-        <Header/>
-        <Main/>
-        <Skills/>
-        <MyWorks/>
-        <Contacts/>
-        <Footer/>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <div className="App">
+                <Main/>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;

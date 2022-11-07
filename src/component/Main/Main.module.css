@@ -1,18 +1,18 @@
-.mainContainer {
-    background-color: #c0c0c0;
-    height: 100vh;
-}
 
-.mainWrapp {
+.mainContent {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*flex-wrap: wrap;*/
+    /*gap: 30px;*/
+    /*align-items: center;*/
+    /*position: fixed;*/
+    /*width: 900px;*/
+    /*top: 100px;*/
+    /*bottom: 100px;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
     display: flex;
-    align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
 }
 
-.mainPhoto {
-    width: 300px;
-    height: 400px;
-    background-color: #5e5e5e;
-}

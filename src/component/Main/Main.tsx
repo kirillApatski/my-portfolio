@@ -1,17 +1,25 @@
 import React from 'react';
 import style from './Main.module.css'
 import container from '../../common/styles/Container.module.css'
+import {Header} from "../Header/Header";
+import {Route, Routes} from "react-router-dom";
+import {Home} from "../Home/Home";
+import {Contacts} from "../Contacts/Contacts";
+import {MyWorks} from "../MyWorks/MyWorks";
+import {Skills} from "../Skills/Skills";
 export const Main = () => {
     return (
-        <div className={style.mainContainer}>
-            <div className={`${style.mainWrapp} ${container.container}`}>
-                <div className={style.mainDescr}>
-                    <span>Lorem ipsum.</span>
-                    <h1>Kirill Apatski</h1>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div className={style.mainPhoto}></div>
-            </div>
+        <div className={`${style.mainContainer} ${container.container}`}>
+            <Header/>
+            <section className={style.mainContent}>
+                <Routes>
+                    <Route path='/home' element={<Home/>}/>
+                    <Route path='/about' element={<Home/>}/>
+                    <Route path='/skills' element={<Skills/>}/>
+                    <Route path='/project' element={<MyWorks/>}/>
+                    <Route path='/contact' element={<Contacts/>}/>
+                </Routes>
+            </section>
         </div>
     );
 };
