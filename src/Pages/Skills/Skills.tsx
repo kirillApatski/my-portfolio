@@ -10,45 +10,31 @@ import {CssIcon} from "../../assets/icons/isconSkills/CSSIcon";
 import {SassIcon} from "../../assets/icons/isconSkills/SASSIcon";
 import {GitIcon} from "../../assets/icons/isconSkills/GitIcon";
 import {MaterialUiIcon} from "../../assets/icons/isconSkills/MaterialUiIcon";
-import {AxiosIcon} from "../../assets/icons/isconSkills/AxiosIcon";
 import {FormicIcon} from "../../assets/icons/isconSkills/FormicIcon";
+import {StoryBookIcon} from "../../assets/icons/isconSkills/StoryBookIcon";
+import {AxiosIcon} from "../../assets/icons/isconSkills/AxiosIcon";
+
+const skillsData = [
+    <JavaScriptIcon/>,
+    <TypeScriptIcon/>,
+    <ReactIcon/>,
+    <ReduxIcon/>,
+    <HtmlIcons/>,
+    <CssIcon/>,
+    <SassIcon/>,
+    <GitIcon/>,
+    <AxiosIcon/>,
+    <MaterialUiIcon/>,
+    <FormicIcon/>,
+    <StoryBookIcon/>
+]
 
 export const Skills = () => {
     return (
         <div className={style.skillsBlock}>
-            <Skill>
-                <JavaScriptIcon/>
-            </Skill>
-            <Skill>
-                <TypeScriptIcon/>
-            </Skill>
-            <Skill>
-                <ReactIcon/>
-            </Skill>
-            <Skill>
-                <ReduxIcon/>
-            </Skill>
-            <Skill>
-                <HtmlIcons/>
-            </Skill>
-            <Skill>
-                <CssIcon/>
-            </Skill>
-            <Skill>
-                <SassIcon/>
-            </Skill>
-            <Skill>
-                <GitIcon/>
-            </Skill>
-            <Skill>
-                <MaterialUiIcon/>
-            </Skill>
-            <Skill>
-                <AxiosIcon/>
-            </Skill>
-            <Skill>
-                <FormicIcon/>
-            </Skill>
+            {
+                skillsData.map((skill, index) => <Skill key={index}>{skill}</Skill>)
+            }
         </div>
     );
 };

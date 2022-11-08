@@ -1,14 +1,31 @@
 import React from 'react';
-import './App.css';
-import {Main} from "./component/Main/Main";
-import {HashRouter} from "react-router-dom";
+import './styles/App.scss';
+import {HashRouter, Route, Routes} from "react-router-dom";
+import container from "./styles/Container.module.css";
+import {Header} from "./common/component/Header/Header";
+import {Home} from "./Pages/Home/Home";
+import {Skills} from "./Pages/Skills/Skills";
+import {MyWorks} from "./Pages/Projects/MyWorks";
+import {Contacts} from "./Pages/Contacts/Contacts";
+import {About} from "./Pages/About/About";
+
 
 
 function App() {
     return (
         <HashRouter>
-            <div className="App">
-                <Main/>
+            <div className={container.container}>
+                <Header/>
+                <section className={'mainContent'}>
+                    <Routes>
+                        <Route path='/' element={<Home/>}/>
+                        <Route path='/home' element={<Home/>}/>
+                        <Route path='/about' element={<About/>}/>
+                        <Route path='/skills' element={<Skills/>}/>
+                        <Route path='/project' element={<MyWorks/>}/>
+                        <Route path='/contact' element={<Contacts/>}/>
+                    </Routes>
+                </section>
             </div>
         </HashRouter>
     );

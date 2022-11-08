@@ -1,0 +1,9 @@
+.skillsBlock {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 100px;
+    padding: 30px;
+
+}

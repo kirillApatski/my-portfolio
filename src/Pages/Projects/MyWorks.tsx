@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './MyWorks.module.css'
-import container from  '../../common/styles/Container.module.css'
+import container from '../../styles/Container.module.css'
 import {Work} from "./Work/Work";
 
 export const MyWorks = () => {

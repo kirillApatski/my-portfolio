@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Contacts.module.css'
-import container from '../../common/styles/Container.module.css'
+import container from '../../styles/Container.module.css'
 
 export const Contacts = () => {
     return (
