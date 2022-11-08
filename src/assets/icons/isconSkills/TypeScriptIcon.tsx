@@ -6,7 +6,7 @@ export const TypeScriptIcon = () => {
              aria-label="TypeScript" role="img"
              viewBox="0 0 512 512">
             <rect
-                width="512" height="512"
+                width={512} height={512}
                 rx="15%"
                 fill="#3178c6"/>
             <path fill="#fff"

@@ -9,7 +9,7 @@ import {MyWorks} from "../MyWorks/MyWorks";
 import {Skills} from "../Skills/Skills";
 export const Main = () => {
     return (
-        <div className={`${style.mainContainer} ${container.container}`}>
+        <div className={container.container}>
             <Header/>
             <section className={style.mainContent}>
                 <Routes>

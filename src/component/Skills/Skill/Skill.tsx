@@ -1,15 +1,14 @@
 import React, {FC, ReactNode} from 'react';
 import style from './Skill.module.css'
-import {TypeScriptIcon} from "../../../assets/icons/isconSkills/TypeScriptIcon";
 
 type SkillType = {
     children: ReactNode
 }
 
-export const Skill: FC<SkillType> = () => {
+export const Skill: FC<SkillType> = ({children}) => {
     return (
         <div className={style.skill}>
-            <TypeScriptIcon/>
+            {children}
         </div>
     );
 };
