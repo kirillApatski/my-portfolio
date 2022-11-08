@@ -13,6 +13,7 @@ export const Main = () => {
             <Header/>
             <section className={style.mainContent}>
                 <Routes>
+                    <Route path='/' element={<Home/>}/>
                     <Route path='/home' element={<Home/>}/>
                     <Route path='/about' element={<Home/>}/>
                     <Route path='/skills' element={<Skills/>}/>
