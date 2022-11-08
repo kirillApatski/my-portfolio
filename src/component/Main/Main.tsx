@@ -19,6 +19,7 @@ export const Main = () => {
                     <Route path='/skills' element={<Skills/>}/>
                     <Route path='/project' element={<MyWorks/>}/>
                     <Route path='/contact' element={<Contacts/>}/>
+
                 </Routes>
             </section>
         </div>
