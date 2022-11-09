@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/App.scss';
 import {HashRouter, Route, Routes} from "react-router-dom";
-import container from "./styles/Container.module.css";
+import container from "./styles/Container.module.scss";
 import {Header} from "./common/component/Header/Header";
 import {Home} from "./Pages/Home/Home";
 import {Skills} from "./Pages/Skills/Skills";

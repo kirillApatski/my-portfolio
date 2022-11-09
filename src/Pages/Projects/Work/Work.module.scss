@@ -1,0 +1,53 @@
+.projectWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 500px;
+  .projectBg {
+    position: relative;
+    width: 55%;
+    opacity: 0.8;
+    &:hover .blockBtn{
+      opacity: 1;
+    }
+    .blockBtn{
+      position: absolute;
+      bottom: 10%;
+      left: 35%;
+      opacity: 0;
+      transition: 0.5s;
+
+    }
+    img {
+      width: 100%;
+      border-radius: 20px;
+      opacity: 1;
+      transition: 0.5s;
+      &:hover{
+        opacity: 0.7;
+        width: 120%;
+      }
+    }
+  }
+
+
+  .projectDescr {
+    width: 40%;
+
+    .projectTitle {
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .projectText {
+      font-size: 18px;
+      line-height: 1.5;
+      color: var(--colorAppText);
+    }
+  }
+}

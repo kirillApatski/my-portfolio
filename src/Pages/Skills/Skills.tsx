@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Skills.module.css'
+import style from './Skills.module.scss'
 import {Skill} from "./Skill/Skill";
 import {TypeScriptIcon} from "../../assets/icons/isconSkills/TypeScriptIcon";
 import {ReactIcon} from "../../assets/icons/isconSkills/ReactIcon";
@@ -31,10 +31,13 @@ const skillsData = [
 
 export const Skills = () => {
     return (
-        <div className={style.skillsBlock}>
-            {
-                skillsData.map((skill, index) => <Skill key={index}>{skill}</Skill>)
-            }
+        <div className={style.skillsWrapper}>
+            <h3 className={style.skillsTitle}>Skills</h3>
+            <div className={style.skillsBlock}>
+                {
+                    skillsData.map((skill, index) => <Skill key={index}>{skill}</Skill>)
+                }
+            </div>
         </div>
     );
 };

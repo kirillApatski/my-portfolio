@@ -1,16 +1,16 @@
 import React from 'react';
-import style from './Nav.module.css'
-import {Link} from "react-router-dom";
+import style from './Nav.module.scss'
+import {NavLink} from "react-router-dom";
 
 export const Nav = () => {
     return (
         <nav>
             <ul className={style.navBlock}>
-                <li><Link to={'/home'}>Home</Link></li>
-                <li><Link to={'/about'}>About</Link></li>
-                <li><Link to={'skills'}>Skills</Link></li>
-                <li><Link to={'/project'}>Projects</Link></li>
-                <li><Link to={'/contact'}>Contact</Link></li>
+                <li><NavLink className={({isActive}) => isActive ? `${style.navBlock} ${style.active}` : ''} to={'/home'}>Home</NavLink></li>
+                <li><NavLink className={({isActive}) => isActive ? style.active : style.navBlock} to={'/about'}>About</NavLink></li>
+                <li><NavLink className={({isActive}) => isActive ? style.active : style.navBlock} to={'skills'}>Skills</NavLink></li>
+                <li><NavLink className={({isActive}) => isActive ? style.active : style.navBlock} to={'/project'}>Projects</NavLink></li>
+                <li><NavLink className={({isActive}) => isActive ? style.active : style.navBlock} to={'/contact'}>Contact</NavLink></li>
             </ul>
         </nav>
     );

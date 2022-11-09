@@ -1,21 +1,26 @@
-import React from 'react';
-import style from './Work.module.css'
-import {Link} from "react-router-dom";
+import React, {FC} from 'react';
+import style from './Work.module.scss'
+import {Buttons} from "../../../common/component/Buttons/Buttons";
 
-type WorkPropsType = {
+
+type WorkType = {
     title: string
     description: string
+    image: string
 }
 
-export const Work = (props: WorkPropsType) => {
+export const Work: FC<WorkType> = (props) => {
     return (
-        <div className={style.workWrapper}>
-            <div className={style.workIcon}>
-                <Link to={'/contact'}>Смотреть</Link>
+        <div className={style.projectWrapper}>
+            <div className={style.projectBg}>
+                <img src={props.image} alt=""/>
+                <div className={style.blockBtn}>
+                    <Buttons title='Vew' path={''}/>
+                </div>
             </div>
-            <div className={style.workDescrWrapp}>
-                <span className={style.workTitle}>{props.title}</span>
-                <p className={style.workDesce}>{props.description}</p>
+            <div className={style.projectDescr}>
+                <h3 className={style.projectTitle}>{props.title}</h3>
+                <p className={style.projectText}>{props.description}</p>
             </div>
         </div>
     );
